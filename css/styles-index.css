@@ -1,4 +1,6 @@
-
+main *{
+    border: 1px solid red;
+}
 #titulo{
     background-color: #000;
     height: 100px;
@@ -7,6 +9,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
   
+#container-calendar{
+    display: none;
+    background-color: #2b2a2a;
+    padding: 2rem;
+    font-size: 1rem;
+}
 /*-----------------------HISTORIA-----------------------*/
 
 #container-historia {
@@ -150,14 +158,18 @@ body {
 @media only screen and (max-width: 1024px) {
 
 
+    #container-calendar{
+        display: flex;
+        justify-content: center;
+        height: 80%;
+    }
+
     #container-historia {
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 3fr;
     }
 
     #container-historia-texto {
         padding: 2rem;
-
     }
 
 }
