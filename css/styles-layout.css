@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+:root {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: none;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../img/fondo.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+
+body {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/*-----------------------HEADER-----------------------*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+    padding: 0.5rem;
+}
+
+.menu-hamburguesa {
+    display: none;
+    padding: 1em;
+    background-color: #333;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    border-radius: 30px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 250px;
+    background-color: #333;
+    transition: right 0.5s;
+    z-index: 999;
+}
+
+.menu.activo {
+    display: block;
+    right: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2em;
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+}
+
+#social-menu {
+    display: flex;
+    justify-content: center;
+}
+
+header #container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #container-logo img {
+    width: 7rem;
+}
+
+header #container-nav {
+    display: flex;
+    justify-content: center;
+}
+
+#nav ul {
+    display: flex;
+    color: white;
+}
+
+header nav#nav ul li {
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: 700;
+    font-style: bold;
+}
+
+/*------------------------SUBMENU----------------------*/
+
+nav>ul>li>ul.submenu{
+    position: absolute;
+    display: none;
+    opacity: 0;
+}
+#nav li:hover .submenu{
+    display: block;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0 0 5px solid black;
+    opacity: 1;
+}
+.fa-sort-down{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+header #container-social {
+    display: flex;
+    margin: auto auto;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+header #container-social a {
+    margin: 0 0.5rem;
+}
+/*----------------------FOOTER----------------------*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #2b2a2a;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+    border-top: 0;
+
+}
+
+.footer-text {
+    animation: deslizarArriba 0.5s ease-in-out;
+}
+/*----------------------COOKIES----------------------*/
+
+.cookie-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #8a8a8a;
+    color: #fff;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cookie-texto {
+    padding: 0 20px;
+    font-style: bold;
+}
+
+.cookie-boton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .menu-hamburguesa {
+        display: block;
+    }
+    
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header #container-logo img {
+        width: 7rem;
+        margin: 1rem 0;
+    }
+
+   
+
+    header #container-nav {
+        display: none;
+    }
+
+    header #container-social {
+        display: none;
+    }
+
+    #container-historia {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr;
+    }
+
+    #container-historia-texto {
+        padding: 2rem;
+
+    }
+
+}

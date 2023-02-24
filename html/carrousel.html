@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carrusel con Owl Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .owl-carousel .item img {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+
+      .owl-carousel .item img {
+        display: block;
+        width: 150px;
+        height: 150px;
+      }
+      .owl-carousel{
+        display: flex;
+        align-content: center;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="owl-carousel">
+    <div class="item"><img src="../img/carrousel/1.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/2.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/3.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/4.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/5.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/6.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/7.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/8.jpg" alt=""></div>
+    <div class="item"><img src="../img/carrousel/9.jpg" alt=""></div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+            stagePadding: 0,
+            margin: 10
+          },
+          100: {
+            items: 2,
+            stagePadding: 0,
+            margin: 20
+          },
+          200: {
+            items: 3,
+            stagePadding: 0,
+            margin: 30
+          },
+          300: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          },
+          600: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          },
+          900: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          },
+          1200: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          },
+          1800: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          },
+          2000: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          },
+          2500: {
+            items: 4,
+            stagePadding: 0,
+            margin: 30
+          }
+        },
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        smartSpeed: 2000,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+*{
+    padding: 0; margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/*----------------ESTILOS FOMRULARIO------------*/
+.carrousel{
+    width: 100%;
+    padding: 1rem 0;
+    height: 350px;
+    border: 0;
+    background-color: rgba(243, 218, 108, 0.5);
+}
+
+#container-form{
+    background-image: url("../img/fondo-forms.png");
+    padding: 1rem 0;
+    background-repeat: repeat;
+}
+
+
+/*----------------ESTILOS FOMRULARIO------------*/
+
+#formulario-inscripcion{
+    width: 600px;
+    background-color: #333;
+    padding: 3rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px #333;
+    font-family: 'Raleway', sans-serif;
+    animation: deslizaDer 0.5s ease-in-out;
+}
+
+#formulario-inscripcion H4{
+    font-size: 22px;
+    margin-bottom: 2rem;
+    color: rgb(233, 219, 158);
+}
+
+.inputs{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(233, 219, 158);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+#formulario-inscripcion p{
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+
+}
+#formulario-inscripcion a{
+    color: white;
+    text-decoration: underline;
+}
+#formulario-inscripcion .boton{
+    border: none;
+    width: 100%;
+    background-color:rgb(236, 213, 4);;
+    color: #2b2a2a;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    .carrousel{
+        width: 100%;
+        padding: 4rem 0;
+        height: 350px;
+    }
+
+}
+@keyframes deslizaDer {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
